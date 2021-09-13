@@ -11,7 +11,7 @@ void CalculateFitnessForGA(std::vector<NSGAChromosome>& pop){
     for(auto i:pop){myfile<<i;}
     myfile.close();
 
-    std::system("/Users/kismet/.pyenv/shims/python /Users/kismet/Documents/github/prec/recent/research/module1/laminate_multiple_component.py");
+    std::system("/Users/kismet/.pyenv/shims/python /Users/kismet/Desktop/git_project/prec/recent/research/module1/laminate_multiple_component.py");
 
     io::CSVReader<4> in("example.csv");
     in.read_header(io::ignore_extra_column,"number_of_angle_pi",
