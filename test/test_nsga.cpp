@@ -2,10 +2,11 @@
 #include "../src/nsga.h"
 
 
-TEST(a,b)
+TEST(NSGA, nsga)
 {
-	EXPECT_EQ(3,3);
+    // Arrange
+    // Act
+    // Assertion
 	NSGA ns(20);
-	ns.display();
-	ns.SelectionOperator();
+    EXPECT_EQ(1,4);
 }

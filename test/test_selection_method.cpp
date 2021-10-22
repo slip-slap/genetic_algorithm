@@ -10,8 +10,6 @@ TEST(GA, selection_method)
     std::vector<int> pos;
     sm.TournamentSelection(3,pos);
     std::cout<<"position"<<std::endl;
-    for(int i=0; i<pos.size(); i++){
-        std::cout<<pos[i]<<std::endl;
-    }
+
 }
 

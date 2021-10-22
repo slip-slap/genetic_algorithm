@@ -31,7 +31,11 @@ set(PROJECT_SOURCES ./src/qcustomplot.h ./src/qcustomplot.cpp
     ./src/nsga.h ./src/nsga.cpp
     ./src/selection_method.h ./src/selection_method.cpp
      ./src/csv.h
-     #mainwindow.ui
+	 ./src/group_chromosome.cpp
+	 ./src/group_chromosome.h
+	 ./src/groupga.h ./src/groupga.cpp
+
+     mainwindow.ui
 	)
 
 include_directories(${Boost_INCLUDE_DIRS})

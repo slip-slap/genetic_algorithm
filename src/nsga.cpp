@@ -31,9 +31,7 @@ void CalculateFitnessForGA(std::vector<NSGAChromosome>& pop){
             pop[row_index].GetFitnessReference()[1] = mass;
         }
         row_index++;
-
     }
-
 }
 
 

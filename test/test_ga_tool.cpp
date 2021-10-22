@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "../src/ga_tool.h"
 
-TEST(a, c)
+TEST(Tool, GenerateRandomBinaryString)
 {
 	std::vector<int> binary_string_vec;
     std::vector<std::pair<double, double>> domain_vec;
