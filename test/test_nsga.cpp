@@ -5,8 +5,8 @@
 TEST(NSGA, nsga)
 {
     // Arrange
+    NSGA ns(20);
     // Act
     // Assertion
-	NSGA ns(20);
     EXPECT_EQ(1,4);
 }

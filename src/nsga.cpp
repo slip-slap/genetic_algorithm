@@ -6,14 +6,14 @@
 
 void CalculateFitnessForGA(std::vector<NSGAChromosome>& pop){
     std::ofstream myfile;
-    myfile.open("example.csv",std::ios::out);
-    myfile<<"number_of_angle_pi, "<< "number_of_angle_zero,"<< "strength_ratio, "<<"mass"<<std::endl;
+    myfile.open("pop.csv",std::ios::out);
+    myfile<<"number_of_angle_pi,"<< "number_of_angle_zero,"<<"strength_ratio,"<<"mass"<<std::endl;
     for(auto i:pop){myfile<<i;}
     myfile.close();
 
-    std::system("/Users/kismet/.pyenv/shims/python /Users/kismet/Desktop/git_project/prec/recent/research/module1/laminate_multiple_component.py");
+    std::system("/Users/kismet/.pyenv/shims/python /Users/kismet/Desktop/git_project/prec/recent/research/module1/batch_material.py");
 
-    io::CSVReader<4> in("example.csv");
+    io::CSVReader<4> in("pop.csv");
     in.read_header(io::ignore_extra_column,"number_of_angle_pi",
                    "number_of_angle_zero", "strength_ratio","mass");
     int number_of_angle_pi, number_of_angle_zero;
